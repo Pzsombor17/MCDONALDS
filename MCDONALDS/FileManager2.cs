@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace MCDONALDS
 {
-    internal class FileManager
+    internal class FileManager2
     {
-        public static List<falatkak> Readfile(string fileName)
+        public static List<burger> Readfile(string fileName)
         {
-            List<falatkak> sorok = new List<falatkak>();
+            List<burger> sorok = new List<burger>();
             try
             {
                 foreach (string sor in File.ReadAllLines(fileName, Encoding.UTF8).Skip(1))
                 {
                     string[] temp = sor.Split(";");
 
-                    sorok.Add(new falatkak(temp));
+                    sorok.Add(new burger(temp));
 
                 }
             }
@@ -27,6 +27,5 @@ namespace MCDONALDS
             }
             return sorok;
         }
-
     }
 }
