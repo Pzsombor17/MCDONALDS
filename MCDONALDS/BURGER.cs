@@ -22,7 +22,22 @@ namespace MCDONALDS
             else if (data[6] == "false") { this.glutenmentes = false; }
             else { this.glutenmentes = false; }
         }
+        public void buy(int darab)
+        {
+
+        }
+        public void ListItems()
+        {
+
+            
+        }
+        public override string ToString()
+        {
+            return $"A burger neve: {name}, ára: {price}, kcal: {kaloria}, glutenmentes: {glutenmentes}";
+        }
 
     }
 
 }
+
+

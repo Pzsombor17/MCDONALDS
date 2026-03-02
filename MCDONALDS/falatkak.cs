@@ -23,8 +23,10 @@ namespace MCDONALDS
                 else if (data[6] == "false") { this.glutenmentes = false; }
                 else { this.glutenmentes = false; }
             }
-            public void buy(int darab)
+            public void buyFalatkak(int darab)
         {
+            Console.WriteLine("\nÜdvözöljük a McDonald's-ban");
+
 
         }
             public override string ToString() {
